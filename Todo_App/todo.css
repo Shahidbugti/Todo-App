@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(100deg, #D9AFD9 0%, #97D9E1 100%);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 40rem;
+    max-height: 45rem; 
+    background-color: #D9AFD9;
+    text-align: center;
+    padding: 2rem; 
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.container h1 {
+    font-size: 5rem;
+    color: #4468e0;
+    margin-bottom: 2rem; 
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    background-color: aqua;
+    border-radius: 100%;
+    margin: 1rem auto;/*center the icon*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: #00cccc; 
+}
+
+.todo-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 2rem 0; 
+}
+
+.todo-list li {
+    background-color: white;
+    color: #333;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.remove {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+button.remove:hover {
+    background-color: #ff1c1c;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.edit:hover {
+    background-color: #45a049;
+}
